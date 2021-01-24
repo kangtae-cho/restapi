@@ -94,7 +94,7 @@ server.delete('/api/user/:id', (req,res) => {
     };
 });
 
-server.listen(3000, (err)=> {
+server.listen(3000, "0.0.0.0", (err)=> {
     if(err) {
         return console.log(err);
     } else {
